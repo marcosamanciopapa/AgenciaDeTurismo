@@ -1,0 +1,105 @@
+/*Reset e Configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+@font-face{
+    font-family:Playfair;
+    src: url("./Fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+body{
+    font-family: Playfair, Times, serif;
+}
+
+/*Layout*/
+
+.container{
+    display: grid;
+    grid-template-areas:
+        "header   header    header    header"
+        "banner   banner    banner    banner"
+        "main     main      main      main"
+        ".        direitos  direitos  ."
+    ;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2vw;
+}
+
+.logo{
+    width: 20vw;
+}
+
+.logo__image{
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu__item ~ .menu__item{
+    margin-left: 10px;
+}
+
+.menu__link{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #035786;
+}
+
+.pipe{
+    color: #f8aa00;
+}
+
+.banner{
+    grid-area: banner; 
+    padding: 0px 2vw;
+}
+
+.banner__image{
+    width: 100%;
+}
+
+.main{
+    grid-area: main;
+    padding: 0px 2vw;
+    margin-top: 2vh;
+}
+
+.main p{
+    text-align: justify;
+    margin-top: 1vw;
+}
+
+.direitos{
+    grid-area: direitos;
+    padding: 0px 2vw;
+    margin-top: 5vh;
+}
+
+.direitos{
+    margin-bottom: 5vh;
+}
+
+.direitos__text{
+    font-weight: bolder;
+}
+
